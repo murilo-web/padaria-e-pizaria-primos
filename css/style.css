@@ -21,7 +21,7 @@ html,body{
 
 /**header**/
 
-header .flex{
+.flex{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,3 +44,62 @@ header i {
 }
 
 /**prços**/
+
+section.nossos-precos .flex{
+    margin-top: 30px;
+}
+
+section.nossos-precos .flex h2{
+    color: ;
+    text-decoration: underline;
+    animation: rotate 10s infinite;
+    animation-delay: 2s;
+    
+}
+
+.nossos-precos i{
+    font-size: 30px;
+}
+
+div.produtos{
+    display: flex;
+}
+
+
+div.img{
+    width: 50%;
+    height: 200px;
+    background-color: gray;
+}
+
+div.precos{
+    width: 50%;
+	padding-top: 50px ;
+    padding-left: 40px;
+
+}
+.precos p{
+
+}
+
+.precos span{
+    margin-left: 40px;
+    font-size: 50px;
+    color: #f7f416;
+}
+
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+
+}
+
