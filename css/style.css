@@ -52,8 +52,8 @@ section.nossos-precos .flex{
 section.nossos-precos .flex h2{
     color: ;
     text-decoration: underline;
+    transform: rotate(20deg);
     animation: rotate 10s infinite;
-    animation-delay: 2s;
     
 }
 
@@ -92,13 +92,13 @@ div.precos{
 
 @keyframes rotate {
     0%{
-        transform: rotate(30deg);
+        transform: rotate(20deg);
     }
     50%{
-        transform: rotate(-30deg);
+        transform: rotate(-20deg);
     }
     100%{
-        transform: rotate(30deg);
+        transform: rotate(20deg);
     }
 
 }
