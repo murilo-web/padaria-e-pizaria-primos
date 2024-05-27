@@ -28,81 +28,64 @@ html,body{
     align-items: center;
 }
 
-header .logo{
-    width: 200px;
-    height: 210px;
-    background-color: #170702;    
-    border-radius: 50%  ;
-    margin-top: 20px;
-    margin-right: 110px;
+header{
+    width: 100%;
+    background-color: #130f09;
+}
+
+header .logo div{
+    float:right;
+    text-align: center;
+    margin-right: 50%;
+    margin-top: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+header .logo img{
+  height: 130px;
+  width: auto;
     
 }
 
-header i {
-    float: left;
-    font-weight: lighter;
-    font-size: 15px;
-}
-
-/**prços**/
+/**promoção**/
 
 section.nossos-precos .flex{
     margin-top: 30px;
 }
 
-section .flex h2{
-    color: ;
-    text-decoration: underline;
-    margin-top: 20px;
-    
+section .flex p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 80px; 
 }
-
-.nossos-precos i{
-    font-size: 30px;
-}
-
-div.produtos{
-    display: flex;
-}
-
-
-div.img{
-    width: 50%;
-    height: 200px;
-    background-color: gray;
-}
-
-div.precos{
-    width: 50%;
-	padding-top: 50px ;
-    padding-left: 40px;
-
-}
-.precos p{
-
-}
-
-.precos span{
-    margin-left: 40px;
-    font-size: 50px;
-    color: #fa520a;
-}
-
-/**promoção**/
 
 .nav-galeria{
+    margin-top: 40px;
+    overflow: hidden;
     width: 100%;
-    height: 200px;
+}
+
+.nav-galeria-wraper{
+    width: 200%;
 }
 
 .mini-img-wraper{
     float: left;
-    width: 25%;
-    height: 200px;
-    background-color: gray;
+    width: calc(12.5% * (100/200));
+    height: 250px;
     border: 1px solid black;
 }
 
+.mini-img{
+    width: 100%;
+	cursor: pointer;
+	padding-top:70%;
+    height: 250px;
+	background-position: center;
+	background-size: cover;
+}
 /**contato**/
 
 .back{
