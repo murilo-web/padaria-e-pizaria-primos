@@ -69,41 +69,74 @@ section .flex p{
 
 .nav-galeria-wraper{
     width: 200%;
+    z-index: 2;
 }
 
 .mini-img-wraper{
     float: left;
     width: calc(12.5% * (100/200));
-    height: 250px;
+    height: 290px;
     border: 1px solid black;
+    z-index: 2;
 }
 
 .mini-img{
     width: 100%;
 	cursor: pointer;
 	padding-top:70%;
-    height: 250px;
+    height: 100%;
 	background-position: center;
-	background-size: cover;
+	background-size:cover;
 }
-/**contato**/
 
-.back{
+.maior{
+    z-index: 1;
+    max-height: 350px;
+}
+
+/**pedidos**/
+
+section.pedidos .flex p{
+    font-size: 50px;
+}
+
+div.confira{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #170702;
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
-.back p{
-    font-weight: bolder;
-    font-size: 40px;
-    text-decoration: underline;
+
+section.pedidos div.desenho img{
+    margin-left: 20%;
+    padding-top:100px;
+    cursor: pointer;
+    
 }
-.back i{
-    font-weight: ;
-    font-size: 40px;
+
+/**footer**/
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #303030;
+}
+
+footer span{
+    color: white;
+}
+
+footer .contatos{
+    float: right;
+    
+}
+
+footer .contatos span{
+    padding-right: 200px;
 }
 
 
