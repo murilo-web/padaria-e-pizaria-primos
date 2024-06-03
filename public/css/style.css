@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+html,body{
+	height: 100%;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+/**header**/
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    background-color: #130f09;
+}
+
+header .logo div{
+    float:right;
+    text-align: center;
+    margin-right: 40%;
+    margin-top: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+header .logo img{
+  height: 130px;
+  width: auto;
+    
+}
+
+/**promoção**/
+
+section.nossos-precos .flex{
+    margin-top: 30px;
+}
+
+section .flex p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 80px; 
+}
+
+.nav-galeria{
+    margin-top: 40px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.nav-galeria-wraper{
+    width: 200%;
+    z-index: 2;
+}
+
+.mini-img-wraper{
+    float: left;
+    width: calc(12.5% * (100/200));
+    height: 500px;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.mini-img{
+    width: 100%;
+	cursor: pointer;
+	padding-top:70%;
+    height: 100%;
+	background-position: center;
+	background-size:cover;
+}
+
+/**pedidos**/
+
+section.pedidos .flex p{
+    font-size: 50px;
+}
+
+div.confira{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+section.pedidos div.desenho img{
+    margin-left: 20%;
+    padding-top:100px;
+    cursor: pointer;
+    
+}
+/**clients.ejs**/
+/**pedido**/
+section.pedido{
+    width: 100%;
+}
+section.pedido .cardapio{
+   height: 600px;
+}
+section.pedido .bebidas{
+    height: 100%;
+    float: left;
+    width: 50%;
+}
+section.pedido .comidas{
+    height: 100%;
+    float: right;
+    text-align: right;
+    width: 50%;
+    
+}
+
+section .img_cardapio1{
+    background-image: url(../img/bebidas_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+section .img_cardapio2{
+    background-image: url(../img/cardapi_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100%;
+}
+/**footer**/
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #303030;
+}
+
+footer span{
+    color: white;
+}
+
+footer .contatos{
+    float: right;
+    
+}
+
+footer .contatos{
+    margin-right: 33.3%;
+}
+footer .contatos span{
+    padding-left: 40px;
+}
+
+

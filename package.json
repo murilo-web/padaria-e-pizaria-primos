@@ -1,0 +1,11 @@
+{
+  "name": "padaria-e-pizaria-primos",
+  "version": "1.0.0",
+  "description": "pagina de publicidade para pizzaria",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
