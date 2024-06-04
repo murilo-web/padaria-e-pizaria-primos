@@ -112,22 +112,32 @@ section.pedidos div.desenho img{
     
 }
 /**clients.ejs**/
-/**pedido**/
-section.pedido{
+
+/**precos**/
+section.precos{
     width: 100%;
 }
-section.pedido .cardapio{
-   height: 600px;
+section.precos .cardapio{
+   height:700px;
+   text-align: center;
+
 }
-section.pedido .bebidas{
+section.precos .bebidas{
     height: 100%;
     float: left;
     width: 50%;
 }
-section.pedido .comidas{
+section.precos .bebidas h2{
+    padding-right: 200px;
+}
+
+section.precos .comidas h2{
+    padding-left: 200px;
+}
+
+section.precos .comidas{
     height: 100%;
     float: right;
-    text-align: right;
     width: 50%;
     
 }
@@ -145,6 +155,95 @@ section .img_cardapio2{
     background-position: right;
     height: 100%;
 }
+
+/**pedidos**/
+
+section.pedidos{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+section.pedidos .container{
+    max-width: 600px;
+	margin:30px auto;
+}
+section.pedidos h2{
+    padding-bottom: 20px;
+}
+
+section.pedidos .form-wraper{
+    float: left;
+    padding: 5px;
+}
+
+section.pedidos input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 60px;
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+section.pedidos input[type=email]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 60px;
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+
+section.pedidos form{
+    text-align: center;
+}
+
+section.pedidos textarea{
+	font-size: 16px;
+	width: 100%;
+	border:1px solid #ccc;
+	height: 140px;
+	resize: none;
+}   
+
+section.pedidos form .form-wraper:nth-of-type(5){
+	text-align: center;
+}
+
+section.pedidos select{
+    width: 300px;
+    text-align: left;
+    border: 2px solid black;
+}
+
+section.pedidos select option{
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+section.contato input[type=submit]{
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.btn1{
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    border-bottom: 0;
+    background-color: #4683AB;
+}
+
+.w100{
+    width: 100%;
+}
+
+
+
 /**footer**/
 
 footer{
