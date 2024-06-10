@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/7d43f0b2b4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Padaria e Pizaria Primos</title>
+</head>
+<body>
+    <header class="container"><!--header-->
+        <div class="logo">
+            <img src="img/logo.png">
+            <div >
+                <p>Padaria e pizzaria<br/>primons</p>
+            </div>
+        </div><!--logo-->
+        <div class="clear"></div>
+    </header>
+    <section class="pedidos_feitos">
+        <h2>Clientes cadastrados</h2>
+        <% lista.forEach(function(user){ %>
+        <div class="lista"><span><%= user.id %></span>
+            <Nav class="pedio_dos_clientes">
+                <ul>
+                    <p>Nome</p>
+                    <li><%= user.nome %></li>
+                    <p>E-mail</p>
+                    <li><%= user.Email %></li>
+                    <p>Telefone</p>
+                    <li><%= user.Telefone %></li>
+                    <p>Pedido</p>
+                    <li><%= user.pedido %></li>
+                    <p>Forma de pagamento</p>
+                    <li><%= user.pagamento %></li> <br/>
+                </ul>
+            </Nav>
+        </div>
+        <% }) %>
+        <div class="clear"
+    </section>
+    <footer>
+        <div class="contatos">
+            <span>
+                <i class="fa-brands fa-whatsapp"></i> 31 99404-7679
+            </span>
+            
+            <span>
+                telepizia de 18:00 as 23:30
+            </span>
+           
+            <span>
+                <i class="fa-brands fa-instagram"></i>@padira.primos_
+            </span>
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/system.js"></script>
+</body>
+</html>

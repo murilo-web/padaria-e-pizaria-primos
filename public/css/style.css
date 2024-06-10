@@ -9,6 +9,7 @@
 html,body{
 	height: 100%;
 }
+
 .container{
     width: 100%;
     margin: 0 auto;
@@ -17,6 +18,7 @@ html,body{
 .clear{
     clear: both;
 }
+
 /**header**/
 
 .flex{
@@ -111,49 +113,47 @@ section.pedidos div.desenho img{
     cursor: pointer;
     
 }
+
 /**clients.ejs**/
 
 /**precos**/
+
 section.precos{
     width: 100%;
+    
 }
+
 section.precos .cardapio{
-   height:700px;
-   text-align: center;
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    text-align: left;
 
 }
+
 section.precos .bebidas{
     height: 100%;
     float: left;
     width: 50%;
 }
+
 section.precos .bebidas h2{
-    padding-right: 200px;
+    padding-left: 50%;
 }
 
 section.precos .comidas h2{
-    padding-left: 200px;
+    padding-left: 50%;
 }
 
 section.precos .comidas{
     height: 100%;
-    float: right;
+    float: left;
     width: 50%;
     
 }
 
-section .img_cardapio1{
-    background-image: url(../img/bebidas_1.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-}
-section .img_cardapio2{
-    background-image: url(../img/cardapi_1.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    height: 100%;
+section img{
+    width: 100%;
 }
 
 /**pedidos**/
@@ -167,6 +167,7 @@ section.pedidos .container{
     max-width: 600px;
 	margin:30px auto;
 }
+
 section.pedidos h2{
     padding-bottom: 20px;
 }
@@ -184,6 +185,7 @@ section.pedidos input[type=text]{
 	line-height: 40px;
 	padding-left: 15px;
 }
+
 section.pedidos input[type=email]{
 	width: 100%;
 	border: 1px solid #ccc;
@@ -224,8 +226,8 @@ section.contato input[type=submit]{
 	border-right: 0;
 	border-left: 0;
 	border-top: 0;
-	cursor: pointer;
 	display: inline-block;
+    
 }
 
 .btn1{
@@ -233,16 +235,47 @@ section.contato input[type=submit]{
     font-size: 30px;
     text-align: center;
     text-decoration: none;
+    color: white;
     line-height: 40px;
     border-bottom: 0;
-    background-color: #4683AB;
+    background-color: #130f09;
+    cursor: pointer;
+    
 }
 
 .w100{
     width: 100%;
 }
+/**lista clientes**/
 
+section .lista{
+    width: 100%;
+    float: left;
+    margin: 20px;
+}
 
+section .lista span{
+    font-size: 50px;
+    padding: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+section .lista ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    text-align: justify;
+    transform: translate(-50%-50%);
+    border: 2px solid black;
+    border-radius: 10px;
+    list-style: none;
+    display: none;
+}
+section .lista ul p{
+    text-decoration: underline;
+}
 
 /**footer**/
 
@@ -264,6 +297,7 @@ footer .contatos{
 footer .contatos{
     margin-right: 33.3%;
 }
+
 footer .contatos span{
     padding-left: 40px;
 }

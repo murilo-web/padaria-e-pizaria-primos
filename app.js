@@ -52,6 +52,7 @@ app.post('/compras',function (req,res) {
      let Email =req.body.Email;
      let Telefone =req.body.Telefone;
      let pedido =req.body.pedido;
-     db.query("INSERT INTO clientes (nome,Email,Telefone,pedido) VALUES (?,?,?,?)",[nome,Email,Telefone,pedido],function(err,results){})
+     let pagamento =req.body.pedido;
+     db.query("INSERT INTO clientes (nome,Email,Telefone,pedido,pagamento) VALUES (?,?,?,?,?)",[nome,Email,Telefone,pedido,pagamento],function(err,results){})
      res.render('index',{});
  })
