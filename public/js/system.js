@@ -1,6 +1,10 @@
 $(function(){
-    $('.lista').click(function () { 
-       $(this).find('ul').slideToggle();
+    $('.lista').click(function () {
+            $('ul').hide();
+            $(this).find('ul').slideToggle();
+            
     });
+    
 })
+
 

@@ -90,9 +90,9 @@ section .flex p{
 	background-size:cover;
 }
 
-/**pedidos**/
+/**fazer_pedidos**/
 
-section.pedidos .flex p{
+section .flex p{
     font-size: 50px;
 }
 
@@ -107,7 +107,7 @@ div.confira{
 }
 
 
-section.pedidos div.desenho img{
+section div.desenho img{
     margin-left: 20%;
     padding-top:100px;
     cursor: pointer;
@@ -118,43 +118,7 @@ section.pedidos div.desenho img{
 
 /**precos**/
 
-section.precos{
-    width: 100%;
-    
-}
 
-section.precos .cardapio{
-    width: 100%;
-    min-height: 100px;
-    max-height: 200px;
-    text-align: left;
-
-}
-
-section.precos .bebidas{
-    height: 100%;
-    float: left;
-    width: 50%;
-}
-
-section.precos .bebidas h2{
-    padding-left: 50%;
-}
-
-section.precos .comidas h2{
-    padding-left: 50%;
-}
-
-section.precos .comidas{
-    height: 100%;
-    float: left;
-    width: 50%;
-    
-}
-
-section img{
-    width: 100%;
-}
 
 /**pedidos**/
 
@@ -249,8 +213,8 @@ section.contato input[type=submit]{
 /**lista clientes**/
 
 section .lista{
-    width: 100%;
-    float: left;
+    width: 40px;
+    display: inline-block;
     margin: 20px;
 }
 
@@ -265,14 +229,25 @@ section .lista ul{
     position: absolute;
     top: 50%;
     left: 50%;
+    background-color: white;
     max-width: 600px;
-    text-align: justify;
-    transform: translate(-50%-50%);
+    max-height: 1600px;
+    transform: translate(-50%,-50%);
     border: 2px solid black;
     border-radius: 10px;
     list-style: none;
     display: none;
+    word-break: break-all;
 }
+
+.conteinher_li p{
+    text-decoration: none;
+}
+
+.conteinher_li{
+   width: 600px;
+}
+
 section .lista ul p{
     text-decoration: underline;
 }
@@ -301,5 +276,3 @@ footer .contatos{
 footer .contatos span{
     padding-left: 40px;
 }
-
-
