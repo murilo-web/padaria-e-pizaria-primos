@@ -51,21 +51,22 @@ header .logo img{
 
 /**promoção**/
 
-section.nossos-precos .flex{
+section.nossos-precos .chamada{
+    text-align: center;
     margin-top: 30px;
 }
 
-section .flex p{
+section .chamada p{
     text-align: center;
     font-weight: bolder;
     font-size: 80px; 
+    z-index: 2;
 }
 
 .nav-galeria{
     margin-top: 40px;
     overflow: hidden;
     width: 100%;
-    
 }
 
 .nav-galeria-wraper{
@@ -80,6 +81,7 @@ section .flex p{
     border: 1px solid black;
     z-index: 2;
 }
+
 
 .mini-img{
     width: 100%;
@@ -116,9 +118,87 @@ section div.desenho img{
 
 /**clients.ejs**/
 
-/**precos**/
+/**section_slide**/
 
+    .conteiner_slide{
+        float: left;
+        width: 40%;
+        min-height: 900px;
 
+    }
+
+    .conteiner_img{
+        position: relative;
+        display: inline-block;
+        padding-top: 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .conteiner_slide_2{
+        float: right;
+        width: 45%;
+        min-height: 900px;
+    }
+
+    .conteiner_img_2{
+        position: relative;
+        display: inline-block;
+        padding-top: 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slider{
+        opacity: 0;
+        transition: opacity .2s;
+        position: absolute;
+        width: 100%;
+    }
+    .slider_2{
+        opacity: 0;
+        transition: opacity .2s;
+        position: absolute;
+        width: 100%;
+    }
+
+    .button i{
+        text-align: center;
+        font-size: 50px;
+        padding-left: 15px;
+        cursor: pointer;
+    }
+
+    .on{
+        opacity: 1;
+    }
+
+    .conter{
+        justify-content: flex-end;
+        flex-direction: row;
+        display: flex;
+    }
+
+    .titulo{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .section_slide h2{
+        padding-top: 10px;
+        float: left;
+    }
+
+    .section_slide h2:last-of-type{
+        float: right;
+    }
+    .button{
+        float: left;
+    }
+
+    .button:last-of-type{
+        float: right;
+        text-align: right;
+    }
 
 /**pedidos**/
 
@@ -265,14 +345,88 @@ footer span{
 }
 
 footer .contatos{
-    float: right;
+    display: inline-block;
     
 }
 
 footer .contatos{
-    margin-right: 33.3%;
+    margin-right: 10%;
+    margin-left: 20%;
 }
 
 footer .contatos span{
     padding-left: 40px;
+}
+
+/**stilo promoção**/
+
+.mini-img-wraper:hover{
+    transform: scale(1.2,1.2);
+    z-index: 1;
+}
+
+/**mobile**/
+@media screen and (max-width: 966px){
+   header .logo{
+    
+    text-align: center;
+   }
+   header .logo div{
+    float: none;
+    margin-right: 0;
+   }
+
+   section .chamada p{
+    font-size: 40px; 
+   }
+}
+@media screen and (max-width: 966px){
+    section div.desenho img{
+        margin-left: 16%;
+    }
+
+    footer .contatos span{
+        padding-left: 20px;
+    }
+
+    footer .contatos{
+        margin-right: 5%;
+        margin-left: 10%;
+    }
+    
+}
+@media screen and (max-width: 686px){
+    section div.desenho img{
+        margin-left: 10%;
+    }
+
+    footer .contatos span{
+        padding-left: 20px;
+    }
+
+    footer .contatos{
+        margin-right: 2%;
+        margin-left: 5%;
+    }
+    .section_slide h2{
+        font-size: 20px;
+    }
+    .button i{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 459px){
+    section div.desenho img{
+        margin-left: 5%;
+    }
+
+    footer .contatos span{
+        padding-left: 5px;
+        font-size: 10px;
+    }
+
+    footer .contatos{
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
