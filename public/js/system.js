@@ -1,10 +1,15 @@
 $(function(){
+
     $('.lista').click(function () {
             $('ul').hide();
             $(this).find('ul').slideToggle();
             
     });
     
+    
+})
+
+$(function () { 
     const slider = document.querySelectorAll('.slider');
     const btnPrev = document.getElementById('voltar');
     const btnNExt = document.getElementById('proxima');

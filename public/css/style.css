@@ -393,6 +393,12 @@ footer .contatos span{
         margin-right: 5%;
         margin-left: 10%;
     }
+    .conteiner_slide{
+        min-height: 500px;
+    }
+    .conteiner_slide_2{
+        min-height: 500px;
+    }
     
 }
 @media screen and (max-width: 686px){

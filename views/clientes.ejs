@@ -23,19 +23,20 @@
     <section class="pedidos_feitos">
         <h2>Clientes cadastrados</h2>
         <% lista.forEach(function(user){ %>
-        <div class="lista"><span><%= user.id %></span>
+        <div class="numero"></div>
+        <div class="lista"><span id="lista"><%= user.id %></span>
             <Nav class="pedio_dos_clientes">
                 <ul>
+                    <h1>X</h1>
                     <p>Nome</p>
                     <li><%= user.nome %></li>
-                    <p>E-mail</p>
+                    <p>endereço</p>
                     <li><%= user.Email %></li>
                     <p>Telefone</p>
                     <li><%= user.Telefone %></li>
                     <p>Pedido</p>
                     <li><%= user.pedido %></li>
-                    <p>Forma de pagamento</p>
-                    <li><%= user.pagamento %></li> <br/>
+                     <br/>
                 </ul>
             </Nav>
         </div>
